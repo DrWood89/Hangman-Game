@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Hangman Basketball Style</title>
+</head>
+
+<body>
+    <div class="parent-container">
+        <div class="jumbotron headcont">
+            <div class="row">
+
+                <div class="col-sm-4"></div>
+                <div class="col-sm-2">
+                    <img src="assets/images/basketball-logo.png" alt="bballhoop" height="200" width="200">
+                </div>
+                <div class="col-sm-3">
+                    <h1 class="display-3">Hangman</h1>
+                    <p class="lead">Basketball Style</p>
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+        </div>
+
+        <div class="baby-container">
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8 cont1">
+                    <div class="row">
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-4">
+                            <a href="https://placeholder.com">
+                                <img src="http://via.placeholder.com/200x200">
+                            </a>
+                            <br>
+                            <br>
+
+
+                        </div>
+                        <div class="col-sm-6">
+                            <span id="Letter" type="text"></span>
+                            <form class="guessForm">
+                                <input type="text" id="guessLetter" maxlength="1" placeholder="Enter a letter . . . &#x23ce;" />
+                                <button type="submit" class="guessButton" onkeyup="myFunction">Guess</button>
+                            </form>
+                            <p class="p2">Hint: words are Basketball Related.</p>
+                            <p class="p2">Think of basketball Players names, Organisations and dates</p>
+                            <br>
+                            <br>
+                            <p>Wins: <span id="wins"></span></p>
+                            <p>Guesses-Remaining: <span id="stat"></span></p>
+                            <div class="wrong">
+                                <div class="wrongLetters"></div>
+                            </div>
+                            <div class="message">
+                                <h2 class="title"></h2>
+                                <p class="text p2"></p>
+                                <button class="restart button">Play Again?</button>
+
+                            </div>
+                        </div>
+                        <div class="col-sm-2"></div>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
